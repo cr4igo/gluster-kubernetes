@@ -36,8 +36,8 @@ spec:
     spec:
       serviceAccountName: heketi-service-account
       containers:
-      - image: heketi/heketi:dev
-        imagePullPolicy: IfNotPresent
+      - image: psoacrrunsonoverall.azurecr.io/heketi/heketi:v9.0.0-136-g587dc593
+        imagePullPolicy: Always
         name: deploy-heketi
         env:
         - name: HEKETI_USER_KEY
