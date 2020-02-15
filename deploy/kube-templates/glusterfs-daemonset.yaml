@@ -20,7 +20,7 @@ spec:
         storagenode: glusterfs
       hostNetwork: true
       containers:
-      - image: gluster/gluster-centos:latest
+      - image: psoacrrunsonoverall.azurecr.io/glusterfs/gluster-centos:7.1
         imagePullPolicy: IfNotPresent
         name: glusterfs
         env:
