@@ -20,8 +20,8 @@ spec:
         storagenode: glusterfs
       hostNetwork: true
       containers:
-      - image: psoacrrunsonoverall.azurecr.io/glusterfs/gluster-centos:7.1
-        imagePullPolicy: IfNotPresent
+      - image: psoacrrunsonoverall.azurecr.io/glusterfs/gluster-centos:7.2-1.el7
+        imagePullPolicy: Always
         name: glusterfs
         env:
         # alternative for /dev volumeMount to enable access to *all* devices
